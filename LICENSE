@@ -1,21 +1,218 @@
-MIT License
+PLAIN PROGRAMMING LANGUAGE — CUSTOM LICENSE
+Version 1.0, March 2026
 
-Copyright (c) 2026 deeptanu100
+Copyright (c) 2026 deeptanu100 ("the Author")
+All Rights Reserved unless expressly granted below.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+================================================================================
+NOTICE: This license is a binding legal instrument. Any modification,
+alteration, removal, or tampering with the terms of this license — in whole
+or in part — by any party other than the Author is strictly PROHIBITED and
+shall render any rights granted herein immediately VOID. Unauthorized
+modification of this license constitutes a violation of the Author's
+intellectual property rights and may result in legal proceedings.
+================================================================================
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1. DEFINITIONS
+
+   "Software" means the Plain Programming Language source code, interpreter,
+   web playground, documentation, examples, VS Code extension, and all
+   associated files contained in this repository.
+
+   "Author" means the original creator and copyright holder: deeptanu100.
+
+   "Derivative Work" means any software, product, application, or service
+   that is built using the Software as a foundation, component, or reference.
+
+   "Direct Sale" means distributing, licensing, sublicensing, or offering for
+   sale the Software itself — whether in original, modified, or repackaged
+   form — as a standalone product or primary deliverable.
+
+
+2. GRANT OF RIGHTS
+
+   Subject to the terms and conditions of this License, the Author hereby
+   grants you a non-exclusive, non-transferable, revocable, worldwide
+   license to:
+
+   (a) USE the Software for personal, educational, and commercial purposes;
+
+   (b) COPY and MODIFY the Software to create Derivative Works;
+
+   (c) PUBLISH and DISTRIBUTE Derivative Works that incorporate the Software,
+       provided that such Derivative Works add substantial original value
+       beyond the Software itself;
+
+   (d) MERGE the Software into larger projects and systems.
+
+
+3. RESTRICTIONS
+
+   You may NOT, under any circumstances:
+
+   (a) DIRECTLY SELL the Software — You shall not sell, sublicense, rent,
+       lease, or otherwise commercially distribute the Software itself,
+       whether in its original form, a modified form, or a repackaged form,
+       as a standalone product. The Software may only be distributed as part
+       of a Derivative Work that adds substantial original functionality,
+       content, or services beyond what the Software provides on its own.
+
+   (b) REMOVE OR ALTER ATTRIBUTION — You shall not remove, obscure, or
+       modify any copyright notices, license text, author credits, or
+       attribution statements contained in or associated with the Software.
+
+   (c) MODIFY THIS LICENSE — You shall not alter, amend, rewrite, extend,
+       or replace this License document, in whole or in part. Any fork,
+       copy, or distribution of the Software must include this License in
+       its exact, unmodified form. Any unauthorized modification of this
+       License shall immediately and automatically terminate all rights
+       granted herein.
+
+   (d) CLAIM AUTHORSHIP — You shall not represent yourself or any third
+       party as the original author or creator of the Software.
+
+
+4. MANDATORY ATTRIBUTION AND CREDIT REQUIREMENTS
+
+   Any Derivative Work, product, application, or service that uses,
+   incorporates, or is built upon the Software MUST include ALL of the
+   following:
+
+   (a) VISIBLE CREDIT — A clearly visible credit statement in the
+       Derivative Work's documentation, "About" section, splash screen,
+       or equivalent user-facing location, reading:
+
+           "Built using Plain Programming Language
+            by deeptanu100 (https://github.com/deeptanu100/Plain-Programming)"
+
+   (b) LICENSE INCLUSION — A complete, unmodified copy of this License
+       file must be included in any distribution of the Derivative Work.
+
+   (c) SOURCE REFERENCE — A direct hyperlink to the original repository
+       (https://github.com/deeptanu100/Plain-Programming) must be provided
+       in any publicly available documentation or website associated with
+       the Derivative Work.
+
+   (d) WRITTEN AUTHORIZATION FOR COMMERCIAL USE — Any commercial Derivative
+       Work (i.e., a product or service offered for monetary compensation)
+       that incorporates the Software must obtain prior written authorization
+       from the Author. Such authorization must bear the proper signatures
+       of the following parties:
+
+           (i)   The Author (deeptanu100) — as the original copyright holder;
+           (ii)  The Head Engineer — the principal technical lead of the
+                 Derivative Work;
+           (iii) The Founder — the principal executive or founder of the
+                 organization producing the Derivative Work.
+
+       This written authorization must be maintained on file for the
+       duration of the Derivative Work's commercial availability and shall
+       be produced upon request by the Author or the Author's legal
+       representative.
+
+
+5. INTELLECTUAL PROPERTY
+
+   This License does not transfer any ownership, title, or intellectual
+   property rights in the Software to you. The Author retains all rights,
+   title, and interest in the Software, including but not limited to all
+   copyrights, patent rights, trade secrets, and trademarks associated
+   with the Software.
+
+
+6. DISCLAIMER OF WARRANTIES
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+   THE AUTHOR SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+   FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+
+7. LIMITATION OF LIABILITY
+
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED
+   TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+   NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+8. TERMINATION
+
+   (a) This License and all rights granted hereunder shall automatically
+       terminate if you fail to comply with any of the terms and conditions
+       set forth herein.
+
+   (b) Upon termination, you must immediately cease all use, distribution,
+       and exploitation of the Software and destroy all copies in your
+       possession or control.
+
+   (c) Sections 4 (Attribution), 5 (Intellectual Property), 6 (Disclaimer),
+       7 (Limitation of Liability), and 9 (Governing Law) shall survive
+       any termination of this License.
+
+
+9. GOVERNING LAW AND JURISDICTION
+
+   (a) This License shall be governed by and construed in accordance with
+       the laws of India, without regard to its conflict of law provisions.
+
+   (b) Any dispute, controversy, or claim arising out of or relating to this
+       License, or the breach, termination, or validity thereof, shall be
+       subject to the EXCLUSIVE JURISDICTION of the courts located in
+       New Delhi, India, specifically the Hon'ble High Court of Delhi
+       at New Delhi and the courts subordinate thereto.
+
+   (c) The parties irrevocably submit to the exclusive jurisdiction of the
+       aforementioned courts and waive any objection to the laying of venue
+       in such courts, including any objection based on forum non conveniens.
+
+   (d) The prevailing party in any legal proceeding arising under this
+       License shall be entitled to recover its reasonable attorney's fees,
+       court costs, and other expenses of litigation from the non-prevailing
+       party.
+
+
+10. SEVERABILITY
+
+   If any provision of this License is held to be invalid, illegal, or
+   unenforceable by a court of competent jurisdiction, such invalidity,
+   illegality, or unenforceability shall not affect any other provision
+   of this License, and the remaining provisions shall continue in full
+   force and effect.
+
+
+11. ENTIRE AGREEMENT
+
+   This License constitutes the entire agreement between you and the Author
+   with respect to the Software and supersedes all prior or contemporaneous
+   understandings, agreements, representations, and warranties, both written
+   and oral, regarding the Software.
+
+
+12. LICENSE INTEGRITY CLAUSE
+
+   THIS LICENSE DOCUMENT IS IMMUTABLE. No person, entity, organization, or
+   party — other than the Author — has the right, authority, or permission
+   to modify, amend, annotate, extend, reduce, reinterpret, or otherwise
+   alter the text of this License in any manner. Any version of this License
+   that differs from the original as published by the Author at
+   https://github.com/deeptanu100/Plain-Programming shall be considered
+   FRAUDULENT and VOID. Distribution of the Software with a modified
+   version of this License constitutes copyright infringement and shall
+   be subject to legal action under applicable law.
+
+   The SHA-256 hash of this License may be published separately by the
+   Author as an additional mechanism to verify the integrity and
+   authenticity of this document.
+
+
+================================================================================
+END OF LICENSE
+================================================================================

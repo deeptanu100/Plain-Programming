@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/language-Plain-7c3aed?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PHRleHQgeD0iNCIgeT0iMjAiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC13ZWlnaHQ9ImJvbGQiPlA8L3RleHQ+PC9zdmc+" alt="Plain">
   <img src="https://img.shields.io/badge/version-1.0-34d399?style=for-the-badge" alt="Version">
-  <img src="https://img.shields.io/badge/license-MIT-f59e0b?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/license-Custom-f59e0b?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/python-3.8+-3b82f6?style=for-the-badge&logo=python&logoColor=white" alt="Python">
 </p>
 
