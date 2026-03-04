@@ -279,7 +279,7 @@ Plain is open to contributions! Here's how you can help:
 - ❌ Cannot directly sell the Software as a standalone product
 - 📝 Commercial derivative works require written authorization with signatures from the Author, Head Engineer, and Founder
 - 🏷️ Proper attribution and credit required in all derivative works
-- ⚖️ Disputes subject to exclusive jurisdiction of the **Delhi High Court, New Delhi, India**
+- ⚖️ Disputes subject to exclusive jurisdiction of the **Supreme Court of India** and all courts under it (High Courts, District Courts, Tribunals)
 - 🔒 License text is **immutable** — unauthorized modification voids all granted rights
 
 ---
