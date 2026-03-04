@@ -273,7 +273,14 @@ Plain is open to contributions! Here's how you can help:
 
 ## 📄 License
 
-MIT License — use Plain however you like!
+**Custom License** — see [LICENSE](LICENSE) for full terms.
+
+- ✅ Free to use, modify, and build upon
+- ❌ Cannot directly sell the Software as a standalone product
+- 📝 Commercial derivative works require written authorization with signatures from the Author, Head Engineer, and Founder
+- 🏷️ Proper attribution and credit required in all derivative works
+- ⚖️ Disputes subject to exclusive jurisdiction of the **Delhi High Court, New Delhi, India**
+- 🔒 License text is **immutable** — unauthorized modification voids all granted rights
 
 ---
 
