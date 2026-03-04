@@ -56,6 +56,9 @@ python plain.py
 
 ### Option 2: Web Playground
 
+**🚀 Play with Plain in your browser:** [deeptanu100.github.io/Plain-Programming](https://deeptanu100.github.io/Plain-Programming/)
+
+You can also run it locally:
 ```bash
 cd playground
 python -m http.server 8000
