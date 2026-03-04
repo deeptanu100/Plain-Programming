@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Plain memory file (runtime state)
+.plain_memory.json
+
+# Test artifacts
+test_runner.js
+test_output*.log
+test.log

@@ -1,0 +1,44 @@
+// FizzBuzz
+// The classic programming challenge, written in Plain
+
+say "=== FizzBuzz (1 to 30) ==="
+say ""
+
+set number to 1
+
+while number is less than or equal to 30
+    set by3 to number
+    set by5 to number
+
+    // Check divisibility by using division and multiplication
+    divide by3 by 3
+    multiply by3 by 3
+    divide by5 by 5
+    multiply by5 by 5
+
+    set fizz to false
+    set buzz to false
+
+    if by3 is equal to number then
+        set fizz to true
+    end if
+
+    if by5 is equal to number then
+        set buzz to true
+    end if
+
+    if fizz is equal to true and buzz is equal to true then
+        say number + ": FizzBuzz"
+    else if fizz is equal to true then
+        say number + ": Fizz"
+    else if buzz is equal to true then
+        say number + ": Buzz"
+    else
+        say number
+    end if
+
+    add 1 to number
+end while
+
+say ""
+say "Done!"

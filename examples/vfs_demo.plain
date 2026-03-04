@@ -1,0 +1,32 @@
+// File Management & Pattern Matching JS Demo
+
+list files in "C:/Users" and save to sys_files
+say "Files found in virtual file system:"
+show sys_files
+
+set sentence to "The quick brown fox"
+
+if sentence starts with "The" then
+    say "Starts with The"
+end if
+
+if sentence contains "brown" then
+    say "Contains brown"
+end if
+
+if sentence ends with "fox" then
+    say "Ends with fox"
+end if
+
+set x to ""
+if x is empty then
+    say "x is currently empty!"
+end if
+
+remember sentence as "saved_string"
+say "Remembered string. Will recall now..."
+
+recall "saved_string" and save to loaded_string
+say "Loaded string from memory:"
+show loaded_string
+forget "saved_string"

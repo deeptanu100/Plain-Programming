@@ -1,0 +1,20 @@
+// Greeting Program
+// A simple program that greets you by name
+
+say "Welcome to Plain!"
+say "---"
+
+ask "What is your name? " and save to name
+ask "How old are you? " and save to age
+
+say "Hello, " + name + "!"
+say "You are " + age + " years old."
+
+if age is greater than or equal to 18 then
+    say "You're an adult. Welcome aboard!"
+else
+    say "You're still young. Keep learning!"
+end if
+
+say ""
+say "Thanks for trying Plain. Have a great day!"

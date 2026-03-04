@@ -1,0 +1,27 @@
+// Number Guessing Game
+// Try to guess the secret number!
+
+say "=== Number Guessing Game ==="
+say ""
+
+set secret to 42
+set attempts to 0
+set found to false
+
+while found is equal to false
+    ask "Guess a number (1-100): " and save to guess
+    add 1 to attempts
+
+    if guess is equal to secret then
+        say "🎉 You got it! The number was " + secret + "!"
+        say "It took you " + attempts + " attempts."
+        set found to true
+    else if guess is less than secret then
+        say "Too low! Try a higher number."
+    else
+        say "Too high! Try a lower number."
+    end if
+end while
+
+say ""
+say "Thanks for playing!"

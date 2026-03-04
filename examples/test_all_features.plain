@@ -1,0 +1,50 @@
+say "--- Testing 8 New Plain Features ---"
+
+say "1. Date Feature:"
+set d to today
+say "Today is: " + d
+
+say "2. Memory Features:"
+remember "Plain User" as "user"
+recall "user" to name
+say "Recalled user: " + name
+forget "user"
+
+say "3. Pattern Matching:"
+set text to "Hello World"
+if text starts with "Hello" then
+    say "Pattern 'starts with Hello' matched!"
+end if
+if text contains "orl" then
+    say "Pattern 'contains orl' matched!"
+end if
+set empty_text to ""
+if empty_text is empty then
+    say "Pattern 'is empty' matched!"
+end if
+
+say "4. File System (Virtual/JS):"
+list files in "my_folder" and save to files
+say "Files found in my_folder: " + size of files
+
+say "5. Audio Feature:"
+play sound "beep.wav" loop false
+
+say "6. Timer Feature:"
+define run_later
+    say "--- Timer executed! ---"
+end define
+after 1 seconds run run_later
+
+say "7. UI and 8. Speech Features:"
+define on_click
+    say "Button was clicked!"
+    speak "Button was clicked!"
+end define
+
+create window called "Interactive UI" with width 300 and height 200
+add a button to window "Interactive UI" with text "Say Hello"
+when button is clicked run on_click
+show window "Interactive UI"
+
+say "Code execution finished (Timers and UI async tasks pending...)"

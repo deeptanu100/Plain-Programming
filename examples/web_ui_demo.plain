@@ -1,0 +1,27 @@
+// Web UI Demonstration
+
+create window called "My App" with width 400 and height 300
+add a button to "My App" with text "Say Hello"
+add a button to "My App" with text "Who am I?"
+
+define say_hello
+    speak "Hello from the Plain Web Interpreter!"
+    say "Hello from the Plain Web Interpreter!"
+    // Demo audio mapping
+    play sound "beep"
+end define
+
+define ask_name
+    speak "What is your name?"
+    say "What is your name?"
+    // Requires a short pause in real-time, but for demo:
+    listen and save to my_name
+    if my_name is not empty then
+        speak "Nice to meet you " + my_name
+        say "Nice to meet you " + my_name
+    end if
+end define
+
+when button is clicked run say_hello
+
+show window "My App"

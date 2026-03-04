@@ -1,0 +1,31 @@
+{
+    "comments": {
+        "lineComment": {
+            "comment": "//"
+        }
+    },
+    "autoClosingPairs": [
+        {
+            "open": "\"",
+            "close": "\""
+        },
+        {
+            "open": "'",
+            "close": "'"
+        }
+    ],
+    "surroundingPairs": [
+        [
+            "\"",
+            "\""
+        ],
+        [
+            "'",
+            "'"
+        ]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "(?i)^\\s*(if .+ then|else|else if .+ then|repeat .+ times|while .+|for each .+|define .+)\\s*$",
+        "decreaseIndentPattern": "(?i)^\\s*(end (if|repeat|while|for|define)|else)\\s*$"
+    }
+}

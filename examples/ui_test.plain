@@ -1,0 +1,19 @@
+// Plain Window UI test
+create window called my_window with width 400 and height 300
+add a button to my_window with text "Click Me" and save to click_me_btn
+add a button to my_window with text "Close" and save to close_btn
+
+define handle_click
+    say "Button was clicked!"
+    speak "Button was clicked."
+end define
+
+define close_app
+    say "Closing application..."
+    // We can handle a system exit or destroy window natively later, for now just say it
+end define
+
+when click_me_btn is clicked run handle_click
+when close_btn is clicked run close_app
+
+show window my_window

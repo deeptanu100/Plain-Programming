@@ -1,0 +1,14 @@
+// Timer testing mock
+set current_date to today
+say "Starting script on " + current_date
+
+define test_timeout
+    say "5 seconds have passed!"
+end define
+
+define test_interval
+    say "Another minute went by."
+end define
+
+after 5 seconds run test_timeout
+every 1 minutes run test_interval

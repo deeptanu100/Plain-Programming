@@ -1,0 +1,28 @@
+// Test Date parsing and Pattern Matching
+set my_word to "hello_world"
+set result to my_word starts with "hello"
+say "Does hello_world start with hello?"
+say result
+
+set sentence to "the quick brown fox"
+set result to sentence contains "fox"
+say "Does the sentence contain 'fox'?"
+say result
+
+set empty_var to ""
+say "Is empty_var empty?"
+say empty_var is empty
+
+say "Today's date is:"
+say today
+
+// Timer test
+define greet
+    say "Hello from the future!"
+end define
+
+say "Wait 2 seconds..."
+after 2 seconds run greet
+
+// Since timers are async in Python implementation, we need a small delay on main thread to keep it alive
+ask "Press Enter to exit..." and save to dummy

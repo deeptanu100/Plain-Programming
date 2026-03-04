@@ -1,0 +1,67 @@
+// To-Do List Manager
+// Add, view, and remove tasks from your list
+
+say "=== To-Do List Manager ==="
+say ""
+
+create list called tasks
+set running to true
+
+while running is equal to true
+    say "---"
+    say "What would you like to do?"
+    say "  1 - Add a task"
+    say "  2 - View all tasks"
+    say "  3 - Remove a task"
+    say "  4 - Quit"
+    say ""
+
+    ask "Your choice: " and save to choice
+
+    if choice is equal to 1 then
+        ask "Enter the task: " and save to task
+        add task to tasks
+        say "✅ Added: " + task
+
+    else if choice is equal to 2 then
+        set count to size of tasks
+        if count is equal to 0 then
+            say "Your to-do list is empty!"
+        else
+            say ""
+            say "Your tasks:"
+            set i to 1
+            for each task in tasks
+                say "  " + i + ". " + task
+                add 1 to i
+            end for
+        end if
+
+    else if choice is equal to 3 then
+        set count to size of tasks
+        if count is equal to 0 then
+            say "Nothing to remove — the list is empty!"
+        else
+            say "Your tasks:"
+            set i to 1
+            for each task in tasks
+                say "  " + i + ". " + task
+                add 1 to i
+            end for
+            ask "Which task number to remove? " and save to num
+            if num is greater than 0 and num is less than or equal to count then
+                remove item num from tasks
+                say "🗑️ Task removed!"
+            else
+                say "That's not a valid task number."
+            end if
+        end if
+
+    else if choice is equal to 4 then
+        set running to false
+        say "Goodbye! Stay productive! 👋"
+
+    else
+        say "I didn't understand that. Please pick 1, 2, 3, or 4."
+    end if
+end while

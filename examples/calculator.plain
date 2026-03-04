@@ -1,0 +1,43 @@
+// Simple Calculator
+// Performs basic math operations
+
+say "=== Plain Calculator ==="
+say ""
+
+ask "Enter the first number: " and save to a
+ask "Enter the second number: " and save to b
+
+say ""
+say "Choose an operation:"
+say "  1 - Add"
+say "  2 - Subtract"
+say "  3 - Multiply"
+say "  4 - Divide"
+say ""
+
+ask "Your choice (1-4): " and save to choice
+
+set result to a
+
+if choice is equal to 1 then
+    add b to result
+    say a + " + " + b + " = " + result
+else if choice is equal to 2 then
+    subtract b from result
+    say a + " - " + b + " = " + result
+else if choice is equal to 3 then
+    multiply result by b
+    say a + " × " + b + " = " + result
+else if choice is equal to 4 then
+    if b is equal to 0 then
+        say "Oops! You can't divide by zero."
+    else
+        divide result by b
+        say a + " ÷ " + b + " = " + result
+    end if
+else
+    say "I don't know that operation. Please pick 1, 2, 3, or 4."
+end if
+
+say ""
+say "Thanks for using Plain Calculator!"

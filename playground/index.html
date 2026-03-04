@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Plain Lab — Interactive Coding Notebook</title>
+    <meta name="description"
+        content="Plain Lab — An interactive notebook for the Plain programming language. Write code that reads like English.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header Toolbar -->
+        <header class="toolbar">
+            <div class="toolbar-left">
+                <div class="logo">
+                    <div class="logo-anim">
+                        <div class="logo-orb">
+                            <div class="orb-ring"></div>
+                            <div class="orb-core">P</div>
+                            <div class="orb-particle p1"></div>
+                            <div class="orb-particle p2"></div>
+                            <div class="orb-particle p3"></div>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Plain <span class="logo-accent">Lab</span></h1>
+                        <span class="tagline">Interactive Notebook</span>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar-center">
+                <button id="btn-add-cell" class="tool-btn" title="Add Cell (B)">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+                    <span>Cell</span>
+                </button>
+                <div class="toolbar-sep"></div>
+                <button id="btn-run-all" class="tool-btn tool-btn-accent" title="Run All Cells">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    <span>Run All</span>
+                </button>
+                <button id="btn-restart" class="tool-btn" title="Restart & Clear Outputs">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="1 4 1 10 7 10" />
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+                    </svg>
+                    <span>Restart</span>
+                </button>
+                <div class="toolbar-sep"></div>
+                <button id="btn-examples" class="tool-btn" title="Load Example">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                    </svg>
+                    <span>Examples</span>
+                </button>
+                <button id="btn-help" class="tool-btn" title="Keyword Reference">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <span>Help</span>
+                </button>
+            </div>
+            <div class="toolbar-right">
+                <span class="kernel-badge" id="kernel-status">
+                    <span class="kernel-dot"></span>
+                    Idle
+                </span>
+            </div>
+        </header>
+
+        <!-- Notebook Body -->
+        <main class="notebook-scroll">
+            <div class="notebook" id="notebook">
+                <!-- Cells will be rendered here by JS -->
+            </div>
+            <button id="btn-add-cell-bottom" class="add-cell-bottom" title="Add Cell">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+                Add Cell
+            </button>
+        </main>
+
+        <!-- Examples Modal -->
+        <div id="examples-modal" class="modal hidden">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Example Programs</h2>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body" id="examples-list"></div>
+            </div>
+        </div>
+
+        <!-- Help Modal -->
+        <div id="help-modal" class="modal hidden">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content modal-lg">
+                <div class="modal-header">
+                    <h2>Plain — Quick Reference</h2>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="help-grid" id="help-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Modal -->
+        <div id="input-modal" class="modal hidden">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content modal-sm">
+                <div class="modal-header">
+                    <h2>Input Needed</h2>
+                </div>
+                <div class="modal-body">
+                    <p id="input-prompt"></p>
+                    <input type="text" id="input-field" class="input-field" autofocus>
+                    <button id="input-submit" class="btn btn-primary" style="margin-top:12px;width:100%">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden file input for CSV/XLS loading -->
+        <input type="file" id="file-input" accept=".csv,.xlsx,.xls,.txt" style="display:none">
+    </div>
+
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+    <script src="plain_interpreter.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
